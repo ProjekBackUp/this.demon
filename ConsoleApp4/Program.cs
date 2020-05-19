@@ -25,9 +25,10 @@ namespace ConsoleApp4
 
             string date = DateTime.Now.ToString("dd/MM/yyy_HH/mm/ss");
 
-            //backup.FullBackUp(@"C:\Data", @"D:\Backup\" + "full_" + date, true);
 
-            backup.DiffBackUp(@"C:\Data", @"D:\Backup\" + "diff_" + date, true);  
+            backup.doBackup("Full", @"C:\Data", @"D:\Backup\", date);
+            //backup.doBackup("Incr", @"C:\Data", @"D:\Backup\", date);
+            //backup.doBackup("Diff", @"C:\Data", @"D:\Backup\", date);
 
             //backup.number();
 
